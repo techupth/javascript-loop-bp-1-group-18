@@ -84,4 +84,12 @@ let orders = [
 ];
 
 let sumPurchasedAmount = 0;
-// Start coding here
+
+for (let i = 0; i < orders.length; i++) {
+  if (orders[i].creditCardType === "jcb") {
+    sumPurchasedAmount += orders[i].productPrice * orders[i].productQuantity;
+  }
+}
+
+console.log(`Total: ${sumPurchasedAmount}`);
+console.log(sumPurchasedAmount);
