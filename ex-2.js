@@ -2,5 +2,11 @@
 let restaurants = ["KFC", "MOMO PARADISE", "Nabezo"];
 let newRestaurants = [];
 
-// Start coding here
-
+let i = 0;
+while (i < restaurants.length) {
+  console.log( "Restaurant Name:"+restaurants[i]);
+  let result =( "Restaurant Name:"+restaurants[i]);
+  i++;
+  newRestaurants.push(result)
+}
+console.log(newRestaurants)
